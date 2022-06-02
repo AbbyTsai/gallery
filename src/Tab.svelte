@@ -54,7 +54,7 @@ const onclick=tabvalue=>()=>(value=tabvalue);
     display:flex;
     justify-content:space-around;
     align-items:center;
-    margin-bottom:-0.5em;
+
 }
 .tab{
     width:33.33%;
@@ -78,6 +78,7 @@ const onclick=tabvalue=>()=>(value=tabvalue);
     display:flex;
     justify-content:space-around;
     align-items:center;
+    padding-bottom:1em;
 }
 .project div{
     border:10px solid pink;
@@ -97,7 +98,7 @@ const onclick=tabvalue=>()=>(value=tabvalue);
 }
 @media screen and (min-width:1201px){  
 .tabcontent, .project{
-    height:55vh;
+    height:53vh;
 }
 .tabcontent, .project, .tabarea{
    width:calc(100vw-2em);
@@ -105,7 +106,7 @@ const onclick=tabvalue=>()=>(value=tabvalue);
 }
 @media (min-width:481px) and (max-width:1200px){
 .tabcontent, .project{
-    height:45vh;
+    height:40vh;
 }
 .tabcontent, .project, .tabarea{
    width:calc(100vw-2em);
