@@ -6,7 +6,7 @@ let projects=[
 ];
 let tabs=[
 {index:1,name:'who',content:"Like everyone, Abby has a pair of eyes, ears and a single nose, mouse, normaly enough, but a thing embarrased said Abby might be at top grades in near-sightedness with around 10 diopters. Woo! don't believe our eyes. It's exxxxxxtra high myopia. Cool, we may see Abby with double thick lens O_O , or contact lens on face."},
-{index:2,name:'what',content:'123'},
+{index:2,name:'what',content:'projects'},
 {index:3,name:'why',content:"Actually, we are all grow by the past. But, do we really pay the things for the past? We may track things in newly technology most time. Just like price strategy, brand new things may be popular than outdated. YES, we may pay the poential in upgrading things. Don't we we we we we we?"},
 ];
 let value=1;
