@@ -5,6 +5,7 @@
 </div>
 <div class="socialarea">
     <a href="https://github.com/AbbyTsai/">GitHub</a>
+    <a href="https://codepen.io/AbbyTsai/">CodePen</a>
     <a href="https://twitter.com/AbbyPTsai">Twitter</a>
     <a href="https://www.linkedin.com/in/AbbyTsai">LinkedIn</a>
 </div>
@@ -14,7 +15,7 @@
     display:flex;
     justify-content:space-around;
     background:pink;
-    height:2em;
+    height:1.5em;
     align-items:center;
 }
 .socialarea a{
@@ -22,7 +23,6 @@
     font-weight:bold;
 }
 .socialarea a:hover{
-    border:5px solid pink;
     background:lightblue;
     border-radius:13% 86% 24% 36% / 42% 0% 48% 47%;
 }

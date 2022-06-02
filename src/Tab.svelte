@@ -41,7 +41,7 @@ const onclick=tabvalue=>()=>(value=tabvalue);
 .tab:nth-child(2)::before{
     content:'projects';
     position:absolute;
-    top:17em;
+    top:18em;
     font-size:12px; 
 }
 .tab:focus{
@@ -53,8 +53,8 @@ const onclick=tabvalue=>()=>(value=tabvalue);
 .tabarea{
     display:flex;
     justify-content:space-around;
-    background:pink;
     align-items:center;
+    margin-bottom:-0.5em;
 }
 .tab{
     width:33.33%;
@@ -65,10 +65,10 @@ const onclick=tabvalue=>()=>(value=tabvalue);
     font-size:24px;
     font-weight:bold;
     text-transform: uppercase;
+    background:pink;
 }
 .tabcontent, .project{
     background:lightblue;
-    border:5px solid pink;
     text-align:center;
     display:flex;
     align-items:center;
@@ -80,7 +80,7 @@ const onclick=tabvalue=>()=>(value=tabvalue);
     align-items:center;
 }
 .project div{
-    border:5px solid pink;
+    border:10px solid pink;
     border-radius:28% 12% 72% 88% / 90% 28% 20% 35%;
     height:fit-content;
     width:fit-content;
@@ -91,34 +91,32 @@ const onclick=tabvalue=>()=>(value=tabvalue);
     margin:0.5em;
     padding:0.5em;
 }
-.tabcontent, .project{
-   padding:1em;
+
+.tabcontent{
+    padding:0.5em;
 }
-@media screen and (min-width:1201px){
- .tabcontent, .project, .tabarea{
-   width:calc(100vw-15px);
-}   
+@media screen and (min-width:1201px){  
 .tabcontent, .project{
-    height:50vh;
+    height:55vh;
+}
+.tabcontent, .project, .tabarea{
+   width:calc(100vw-2em);
 }
 }
 @media (min-width:481px) and (max-width:1200px){
-.tabcontent, .project, .tabarea{
-   width:calc(100vw-15px);
-}
 .tabcontent, .project{
-    height:35vh;
+    height:45vh;
+}
+.tabcontent, .project, .tabarea{
+   width:calc(100vw-2em);
 }
 }
 @media screen and (max-width:480px){
-.tabcontent, .project {
-   width:calc(100vw-15px);
-}
-.tabarea{
-    width:100vw;
-}
 .tabcontent, .project{
    height:60vh;
+}
+.tabcontent, .project, .tabarea{
+   width:calc(100vw-3em);
 }
 .project{
 flex-direction:column;

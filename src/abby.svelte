@@ -385,13 +385,13 @@
 			C337.617,279.605,347.26,282.266,348.749,275.993z"/>
 	</g>
 </g>
-<path fill="none" stroke="lightblue" stroke-width="8" stroke-miterlimit="10" d="M257.714,319.287c0,0,21.255-13.396,47.202-17.787
+<path fill="none" stroke="pink" stroke-width="8" stroke-miterlimit="10" d="M257.714,319.287c0,0,21.255-13.396,47.202-17.787
 	s56.584,0.221,59.084,6.471"/>
-<path fill="none" stroke="lightblue" stroke-width="8" stroke-miterlimit="10" d="M267.777,329.662c0,0,17.23-12.253,38.264-16.271
+<path fill="none" stroke="pink" stroke-width="8" stroke-miterlimit="10" d="M267.777,329.662c0,0,17.23-12.253,38.264-16.271
 	c21.033-4.017,45.87,0.203,47.896,5.92"/>
-<path fill="none" stroke="lightblue" stroke-width="8" stroke-miterlimit="10" d="M282.911,336.769c0,0,12.539-9.754,27.845-12.951
+<path fill="none" stroke="pink" stroke-width="8" stroke-miterlimit="10" d="M282.911,336.769c0,0,12.539-9.754,27.845-12.951
 	c15.307-3.197,33.381,0.161,34.855,4.712"/>
-<path fill="none" stroke="lightblue" stroke-width="12" stroke-miterlimit="10" d="M310.857,300.663c0,0,11.164,0,3.404,36.106"/>
+<path fill="none" stroke="pink" stroke-width="12" stroke-miterlimit="10" d="M310.857,300.663c0,0,11.164,0,3.404,36.106"/>
 </svg>
 
 <style>
@@ -404,7 +404,7 @@
 	position:relative;
 	z-index:-1;
 	transform:scale(1.8);
+	margin-top:1em;
 }
-
 
 </style>
