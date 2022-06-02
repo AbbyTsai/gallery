@@ -407,4 +407,9 @@
 	margin-top:1em;
 }
 
+<<<<<<< HEAD:src/abby.svelte
 </style>
+=======
+
+</style>
+>>>>>>> 9222e9b782ab9ce68842f270a52323d098af1681:src/Abby.svelte
