@@ -6,3 +6,6 @@ import Social from './Social.svelte';
 <Abby/>
 <Tab/>
 <Social/>
+<style>
+
+</style>

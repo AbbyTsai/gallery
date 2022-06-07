@@ -398,13 +398,11 @@
 #abby{
     display:flex;
 	margin:auto;
-    height:200px;
+    height:30vh;
     width:300px;
-    margin-bottom:-2em;
 	position:relative;
 	z-index:-1;
-	transform:scale(1.8);
-	margin-top:1em;
+	transform:scale(1.8) translateY(5px);
 }
 
 </style>
