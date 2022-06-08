@@ -1,8 +1,8 @@
 <script>
 let projects=[
-    {index:1,topic:'LifeBall',url:'https://bordercss.netlify.app/',description:"visual corner tool: border-radius!",video:'https://www.youtube.com/embed/25PZ9mcWOtI',img:'https://img.youtube.com/vi/25PZ9mcWOtI/0.jpg'},
-    {index:2,topic:'LuckyEgg',url:'https://luckyegg-css.netlify.app/', description:"visual background tool: gradient!",video:'https://www.youtube.com/embed/IMyj3BA_pMs',img:'https://img.youtube.com/vi/IMyj3BA_pMs/0.jpg'},
-    {index:3,topic:'Hello-GUI-Challenge',url:'https://hello-gui-challenge.netlify.app/', description:"fantastic interface materials!",video:'https://www.youtube.com/embed/UYBhSUTjkQ8',img:'https://img.youtube.com/vi/UYBhSUTjkQ8/0.jpg'},
+    {index:1,topic:'LifeBall',about:"The video shows how-to style button in one-click!",url:'https://bordercss.netlify.app/',description:"visual corner tool: border-radius!",video:'https://www.youtube.com/embed/25PZ9mcWOtI',img:'https://img.youtube.com/vi/25PZ9mcWOtI/0.jpg'},
+    {index:2,topic:'LuckyEgg',about:"The video shows how-to style background in one-click!",url:'https://luckyegg-css.netlify.app/', description:"visual background tool: gradient!",video:'https://www.youtube.com/embed/IMyj3BA_pMs',img:'https://img.youtube.com/vi/IMyj3BA_pMs/0.jpg'},
+    {index:3,topic:'Hello-GUI-Challenge',about:"The video outlines all topics of challenge on how-to build interfaces!",url:'https://hello-gui-challenge.netlify.app/', description:"fantastic interface materials!",video:'https://www.youtube.com/embed/UYBhSUTjkQ8',img:'https://img.youtube.com/vi/UYBhSUTjkQ8/0.jpg'},
 ];
 let tabs=[
 {index:1,name:'who',content:"Like everyone, Abby has a pair of eyes, ears and a single nose, mouse, normaly enough, but a thing embarrased said Abby might be at top grades in near-sightedness with around 10 diopters. Woo! don't believe our eyes. It's exxxxxxtra high myopia. Cool, we may see Abby with double thick lens O_O , or contact lens on face."},
@@ -36,8 +36,9 @@ const onclick=tabvalue=>()=>(value=tabvalue);
 <div class="dialog" id="dialog{i}">
 <div class='dialogContent'>
 <h3><a href={project.url}>{project.topic}</a></h3>
-<p>{project.description}</p>
-<iframe height="70%" width="80%" src={project.video} title="youtube">
+<div class="description">{project.description}</div>
+<div class="about">{project.about}</div>
+<iframe height="90%" width="90%" src={project.video} title="youtube">
 </iframe>
 <button><a href="#tabarea">back</a></button>
 </div>
@@ -52,6 +53,10 @@ const onclick=tabvalue=>()=>(value=tabvalue);
 {/each}
 
 <style>
+.about{
+    text-align:center;
+    padding:0 1em 0.5em 1em;
+}
 button{
     border:5px solid pink;
     border-radius:55% 6% 61% 84% / 83% 92% 46% 74%;
@@ -137,6 +142,7 @@ button:hover{
 iframe{
     border:15px solid pink;
     border-radius:28% 12% 72% 88% / 90% 28% 20% 35%;
+    margin:0 1em;
 }
 .project div{
     border:10px solid pink;
