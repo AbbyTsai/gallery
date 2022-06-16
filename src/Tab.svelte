@@ -35,11 +35,12 @@ const onclick=tabvalue=>()=>(value=tabvalue);
 {#each projects as project, i}
 <div class="dialog" id="dialog{i}">
 <div class='dialogContent'>
-<h3><a href={project.url}>{project.topic}</a></h3>
+<h3>{project.topic}</h3>
 <div class="description">{project.description}</div>
 <div class="about">{project.about}</div>
 <iframe height="90%" width="90%" src={project.video} title="youtube">
 </iframe>
+<a href={project.url}>Let's GO to {project.topic} Website</a>
 <button><a href="#tabarea">back</a></button>
 </div>
 </div>
@@ -66,11 +67,21 @@ button{
 .dialogContent button, .project button{
         margin:0.5em;
 }
-button a{
+button a, .dialogContent a{
     text-decoration:none;
+}
+a[href*="netlify"]{
+    background: pink;
+    transform: translateY(-0.5em);
+    border-radius: 0% 0% 77% 92% / 100% 100% 30% 29%;
+    padding: 0 0.5em;
+    text-align:center;
 }
 button:hover{
     background:lightblue;
+}
+a[href*="netlify"]:hover{
+    border: 5px solid red;
 }
 .project img{
     object-fit:cover;
@@ -90,7 +101,9 @@ button:hover{
 }
 .dialog:target, .dialog:focus{
 	display:block;
+
 }
+
 .dialogContent{
 	display:flex;
     flex-direction:column;
